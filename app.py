@@ -2,25 +2,25 @@ import streamlit as st
 
 # Set up the professional page layout and metadata
 st.set_page_config(
-    page_title="DhristiSAR | Active Development",
+    page_title="DrishtiSAR | Active Development",
     page_icon="🛰️",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
 
 # Header Section
-st.title("🛰️ DhristiSAR")
+st.title("🛰️ DrishtiSAR")
 st.subheader("Multimodal SAR-Optical Pipeline for Cloud-Free Disaster Early Warning")
 
 # Status Alert
-st.warning("**🚧 System Status: Active Development 🚧**\n\nThe DhristiSAR dashboard is currently under construction. Our backend AI models are currently being trained and integrated.")
+st.warning("**🚧 System Status: Active Development 🚧**\n\nThe DrishtiSAR dashboard is currently under construction. Our backend AI models are currently being trained and integrated.")
 
 st.divider()
 
 # Project Pitch / About Section
 st.markdown("### 🌍 The Vision")
 st.markdown("""
-During critical disasters like the Kerala floods or Assam monsoons, traditional optical satellites are blinded by clouds. **DhristiSAR** bridges this gap. 
+During critical disasters like the Kerala floods or Assam monsoons, traditional optical satellites are blinded by clouds. **DrishtiSAR** bridges this gap. 
 
 By utilizing state-of-the-art **Diffusion Models**, we fuse all-weather SAR (Synthetic Aperture Radar) data with optical imagery to artificially "erase" clouds. These clean images are then fed into deep learning detection models to provide authorities with real-time, all-weather situational awareness.
 """)
@@ -46,7 +46,7 @@ st.info("**v1 launch: May 2026**")
 st.markdown("### 📬 Contact & Links")
 st.write("Email: abhayaditya150@gmail.com")
 st.markdown("[LinkedIn](https://www.linkedin.com/in/abhayaditya/)")
-st.markdown("[GitHub Repository](https://github.com/imadi124/DhristiSAR)")
+st.markdown("[GitHub Repository](https://github.com/imadi124/DrishtiSAR)")
 
 st.divider()
 

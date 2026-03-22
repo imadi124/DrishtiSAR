@@ -1,6 +1,6 @@
-# 🛰️ DhristiSAR: Multimodal SAR-Optical Diffusion Pipeline
+# 🛰️ DrishtiSAR: Multimodal SAR-Optical Diffusion Pipeline
 
-**DhristiSAR** is an AI-powered satellite imagery pipeline designed for cloud-free disaster early warning and Land Use/Land Cover (LULC) change detection. 
+**DrishtiSAR** is an AI-powered satellite imagery pipeline designed for cloud-free disaster early warning and Land Use/Land Cover (LULC) change detection. 
 
 During heavy monsoons or natural disasters, crucial optical satellite imagery is often blocked by clouds. This project aims to solve that by fusing all-weather SAR data (Sentinel-1) with optical data (Sentinel-2/Cartosat) using advanced Diffusion Models to generate clean, cloud-free imagery. This clean data is then processed to detect disasters and map land changes in real-time.
 
@@ -23,7 +23,7 @@ During heavy monsoons or natural disasters, crucial optical satellite imagery is
 *Built to empower all-weather, real-time disaster management.*
 
 ### 🛠️ Contribution
-Contributions to DhristiSAR are highly encouraged. Whether it is code improvements, bug fixes, documentation updates, or feature enhancements, feel free to contribute to the project repository.
+Contributions to DrishtiSAR are highly encouraged. Whether it is code improvements, bug fixes, documentation updates, or feature enhancements, feel free to contribute to the project repository.
 
 ### 📜 License
-DhristiSAR is licensed under the MIT License, granting you the freedom to use, modify, and distribute the code in accordance with the terms of the license.
+DrishtiSAR is licensed under the MIT License, granting you the freedom to use, modify, and distribute the code in accordance with the terms of the license.
