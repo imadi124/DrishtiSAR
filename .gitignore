@@ -41,6 +41,7 @@ Thumbs.db
 # Environment variable files
 .env
 .env.*
+environment.yml
 
 # Large model/data artifacts
 checkpoints/
@@ -55,3 +56,14 @@ outputs/
 
 # Local planning/notes
 knowledge_base.txt
+
+# Ignore root-level ad-hoc images
+/*.jpg
+/*.jpeg
+/*.png
+
+# Track app card images from assets folder
+!assets/images/
+!assets/images/*.jpg
+!assets/images/*.jpeg
+!assets/images/*.png

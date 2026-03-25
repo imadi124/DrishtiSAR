@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image, ImageOps
 
 # Set up the professional page layout and metadata
 st.set_page_config(
@@ -28,15 +29,45 @@ By utilizing state-of-the-art **Diffusion Models**, we fuse all-weather SAR (Syn
 # Planned Features Grid
 st.markdown("### 🚀 Upcoming Features")
 
-col1, col2 = st.columns(2)
+def load_feature_image(path, size=(900, 520)):
+    img = Image.open(path).convert("RGB")
+    return ImageOps.fit(img, size, method=Image.Resampling.LANCZOS)
 
-with col1:
-    st.info("**🌥️ AI Cloud Removal**\n\nFusing Sentinel-1 (SAR) and Sentinel-2 to generate crystal-clear optical maps, regardless of weather.")
-    st.error("**🚨 Disaster Detection**\n\nAutomated bounding boxes and alerts for rapidly spreading floods and forest fires.")
+cards = [
+    {
+        "icon": "🌥️",
+        "title": "AI Cloud Removal",
+        "desc": "Fusing Sentinel-1 (SAR) and Sentinel-2 to generate crystal-clear optical maps, regardless of weather.",
+        "img": "assets/images/cloud removal.jpg",
+    },
+    {
+        "icon": "🗺️",
+        "title": "LULC Change Mapping",
+        "desc": "High-precision 'before-and-after' segmentation maps to track urban and environmental shifts.",
+        "img": "assets/images/LULC change.jpg",
+    },
+    {
+        "icon": "🚨",
+        "title": "Disaster Detection",
+        "desc": "Automated bounding boxes and alerts for rapidly spreading floods and forest fires.",
+        "img": "assets/images/disaster_detection.png",
+    },
+    {
+        "icon": "⏱️",
+        "title": "Early Warning System",
+        "desc": "Time-series analysis to predict disaster trajectories and generate early warning scores.",
+        "img": "assets/images/time-series analysis.jpg",
+    },
+]
 
-with col2:
-    st.success("**🗺️ LULC Change Mapping**\n\nHigh-precision 'before-and-after' segmentation maps to track urban and environmental shifts.")
-    st.warning("**⏱️ Early Warning System**\n\nTime-series analysis to predict disaster trajectories and generate early warning scores.")
+for i in range(0, len(cards), 2):
+    col1, col2 = st.columns(2)
+    for col, card in zip([col1, col2], cards[i:i+2]):
+        with col:
+            with st.container(border=True):
+                st.markdown(f"**{card['icon']} {card['title']}**")
+                st.image(load_feature_image(card["img"]), use_container_width=True)
+                st.write(card["desc"])
 
 st.divider()
 
