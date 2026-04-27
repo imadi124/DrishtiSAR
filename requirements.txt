@@ -1,1 +1,25 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scikit-image
+opencv-python
+rasterio
+geopandas
+xarray
+rioxarray
+folium
 streamlit
+jupyter
+ipykernel
+Pillow
+albumentations
+wandb
+huggingface-hub
+geemap
+segmentation-models-pytorch
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+torchaudio

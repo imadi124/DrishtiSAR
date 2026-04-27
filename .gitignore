@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.tif
+*.npy
+*.png
+*.jpg
+wandb/
 
 # Build / packaging
 build/
@@ -53,6 +58,9 @@ outputs/
 *.tif
 *.tiff
 *.zip
+
+# Satellite data and processed files
+data/
 
 # Local planning/notes
 knowledge_base.txt
